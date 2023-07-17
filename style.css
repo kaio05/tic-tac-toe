@@ -7,7 +7,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: rgb(31, 31, 113);
+    background: #2b2534;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,18 +24,21 @@ body {
 .cell {
     width: 160px;
     height: 160px;
-    background: rgb(62, 62, 212);
+    background: rgb(86, 86, 106);
     position: relative;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.201);
 }
 
 .cell.x::before, .cell.x::after {
-    background: #000;
+    background: #d79700;
     width: 20px;
     height: 100px;
     content: '';
     position: absolute;
     top: 30px;
     left: 70px;
+    border-radius: 3px;
 }
 
 .cell.x::before {
@@ -48,7 +51,7 @@ body {
 
 .cell.o::before {
     content: '';
-    background: #000;
+    background: #00c6a5;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -59,7 +62,7 @@ body {
 
 .cell.o::after {
     content: '';
-    background: rgb(62, 62, 212);
+    background: rgb(86, 86, 106);
     width: 60px;
     height: 60px;
     position: absolute;
@@ -88,7 +91,7 @@ body {
 
 .replay {
     padding: 10px 20px;
-    background: rgb(20, 20, 72);
+    background: rgb(0, 45, 77);
     color: white;
     border-radius: 20px;
     border: none;
